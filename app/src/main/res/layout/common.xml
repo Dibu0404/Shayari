@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/con_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/RelativeLayout"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:text="0/0"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/romantic">
+
+        <TextView
+            android:id="@+id/ShayariTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Text"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/previous_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/copy_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/copy" />
+
+        <Button
+            android:id="@+id/share_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/share" />
+
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/forward" />
+
+
+    </LinearLayout>
+</RelativeLayout>
